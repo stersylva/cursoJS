@@ -1,6 +1,8 @@
 console.log(7 / 0) // gera o infinito
 console.log("10" / 2); 
 //ele verifica o conteudo da string e ver ser pode ser concertido em numero e faz a soma
+console.log('2' + 2); //ele não vai somar porque o + faz todo sentido no mundo da string nesse caso ele vai concatenar
+console.log('3' - 2); //nessa caso ele vai diminuir porque o - não faz sentido no mundo da string
 
 console.log("show!" * 2)
 console.log(0.1 + 0.7) // gera uma imprecisão
