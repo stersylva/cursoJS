@@ -14,15 +14,15 @@ console.log('terminou aqui')
 //estrategia 2, 3 e 4 para gerar valor padrão
 function soma2(a, b, c) {
     a = a !== undefined ? a : 1 //se a for estritamente diferente de undefined ele retorna a, se não, ele retorna 1
-    b = 1 in arguments ? b : 1 // se o indice b for igual 1 pegue o valor de b, se não, pegue o valor 1
+    b = 1 in arguments ? b : 2 // se o indice b for igual 1 pegue o valor de b, se não, pegue o valor 2
     c = isNaN(c) ? 1 : c //se o valor não for um número ele retorna 1 se for ele retorna c 
     // o isNan retorna true se o valor não for um número 
     return a + b + c
 }
-console.log(soma2())
-console.log(soma2(3))
-console.log(soma2(1, 2, 3))
-console.log(soma2(0, 0, 0))
+console.log(`1: ${soma2()}`)
+console.log(`2: ${soma2(3)}`)
+console.log(`3: ${soma2(1, 2, 3)}`)
+console.log(`4: ${soma2(0, 0, 0)}`)
 console.log('fim')
 
 //valor padrao do es2015
