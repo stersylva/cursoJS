@@ -7,8 +7,8 @@ const produtos = {} // um objeto de chaves e valor
 
 function salvaProduto(produto) {
     if (!produto.id) produto.id = sequence.id
-    produtos[produto.id] = produto // a chave é o id e o valor é o produto
-    return produto
+    produtos[produto.id] = produto // a chave é o id e o valor é o produto. No objeto produtos ele vai pegar o id que foi passado na sequencia e o produto
+    return produto // e vai retornar o produto
 }
 
 function getProduto(id) {
